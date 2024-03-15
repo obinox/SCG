@@ -52,36 +52,3 @@ button {
     color:white;
     border-radius:0px;
 }
-@keyframes scan {
-    0% { left: var(--a); }
-    100% { left: 100%; }
-}
-@keyframes blink {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-#s {
-    position: relative;
-    margin: auto;
-    width: 220px;
-    height: 10px;
-    overflow: hidden;
-}
-#b {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    left: var(--a);
-}
-#b.scanning {
-    background-color: lime;
-    animation: 0.5s ease-in-out infinite scan;
-}
-#s.green {
-    background-color: lime;
-    animation: 0.5s 1 blink;
-}
-#s.red {
-    background-color: red;
-    animation: 0.5s 1 blink;
-}
