@@ -1,0 +1,103 @@
+exports.m=(b)=>{return `<!DOCTYPE html>
+<html>
+    <head>
+        <title>SCG 일차 과제 박종휘</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+    </head>
+    <body>
+        <div class="maincont">
+            <div>
+                <h1 style="color: yellow;">감정 입력하기</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                당신이 경험한 상황은 다양한 감정을 유발한다. 
+                <br>
+                오늘 어떤 일이 있었는지, 한번 떠올려보자.
+                <br>
+                <br>
+                <br>
+                <form method="POST" action="/x">
+                    <label for="n">이름(필수): </label>
+                    <input class="f" name="n" required><br>
+                    <label for="f">감정(필수): </label>
+                    <select class="f" name="f" required>
+                        <option value=""  selected></option>
+                        <option value="분노">분노</option>
+                        <option value="경멸">경멸</option>
+                        <option value="역겨움">역겨움</option>
+                        <option value="두려움">두려움</option>
+                        <option value="행복">행복</option>
+                        <option value="중립">중립</option>
+                        <option value="슬픔">슬픔</option>
+                        <option value="놀람">놀람</option>
+                    </select><br>
+                    <label for="s">비고(선택):</label>
+                    <input class="f" name="s"><br>
+                    <br>
+                    <button id="t">입력</button>
+                </form>
+                <br>
+                <table>
+                    <tr>
+                        <th style="width: 50px;">이름</th>
+                        <th style="width: 50px;">감정</th>
+                        <th style="width: 300px;">비고</th>
+                    </tr>
+                    ${b}
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                TRE 따라한거 맞습니다.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="subcont">
+            <div id="m" hidden>
+                <h1>결과</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 id="w">none</h2>
+                <br>
+                <br>
+                <br>
+                <button id="r">restart</button>
+                <br>
+                <br>
+                <button id="z">close</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>`}
